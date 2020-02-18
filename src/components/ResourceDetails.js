@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 
 class ResourceDetails extends React.Component {
 
     render () {
         return (
-            <aside className="resource-details ui                                                                                twelve wide column">
+            <aside className="resource-details ui twelve wide column">
                 <div className="card">
                     <div className="image">
                         <img src={ this.props.activeResource.gender === 'M' ? '/img/male_l.png': '/img/female_l.png' } alt="visual identification" />
@@ -38,4 +40,8 @@ ResourceDetails.propTypes = {
     activeResource: PropTypes.object.isRequired
 }
 
-export default ResourceDetails;
+const mapStateToProps = state => {
+    return { activeResource: state.selectedResource || state.resources[0] };
+}
+
+export default connect(mapStateToProps)(ResourceDetails);

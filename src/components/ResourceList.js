@@ -1,22 +1,31 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+
 import Resource from './Resource';
 
-const resourceList = ({ resourceList, onSelection }) => {
-    const resources = resourceList.map((resource, i) => {
-        return <Resource key={ i } data={ resource } onSelection={ onSelection } />;
-    });
+class ResourceList extends React.Component {
+    renderList() {
+        return this.props.resources.map((resource, i) => {
+            return <Resource key={ i } data={ resource } />;
+        });
+    }
 
-    return (
-        <div className="resource-list four wide column">
-            { resources }
-        </div>
-    );
-};
-
-resourceList.propTypes = {
-    resourceList: PropTypes.object.isRequired,
-    onSelection: PropTypes.func.isRequired
+    render() {
+        return (
+            <div className="resource-list four wide column">
+                { this.renderList() }
+            </div>
+        );
+    }
 }
 
-export default resourceList;
+ResourceList.propTypes = {
+    resources: PropTypes.array.isRequired
+}
+
+const mapStateToProps = state => {
+    return { resources: state.resources };
+}
+
+export default connect(mapStateToProps)(ResourceList);

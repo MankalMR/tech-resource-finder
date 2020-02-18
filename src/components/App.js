@@ -58,8 +58,8 @@ class App extends React.Component {
             <section>
                 <SearchBar onSearchSubmit={ this.onSearchSubmit }/>
                 <section className="content ui grid row" >
-                    <ResourceList resourceList={ this.state.resources } onSelection={ this.onResourceSelection } />
-                    <ResourceDetails activeResource ={ this.state.selectedResource } />
+                    <ResourceList />
+                    <ResourceDetails />
                 </section>
             </section>
         );
