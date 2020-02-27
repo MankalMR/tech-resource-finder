@@ -1,11 +1,32 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
+    "resources": [
+        {
+            "name": "Manohar Mankala",
+            "location": "Columbus, OH",
+            "gender": "M"
+        },
+        {
+            "name": "Priyanka Chetty",
+            "location": "Columbus, OH",
+            "gender": "F"
+        },
+        {
+            "name": "Lijash Mohammed",
+            "location": "Orange County, CA",
+            "gender": "M"
+        },
+        {
+            "name": "Lin Joseph",
+            "location": "Austin, TX",
+            "gender": "M"
+        },
+        {
+            "name": "Nikhil Narula",
+            "location": "Dallas, TX",
+            "gender": "M"
+        }
+    ],
+    "profile": {
+        "name": "typicode"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
 }
