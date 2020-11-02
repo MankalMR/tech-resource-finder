@@ -32,11 +32,11 @@
     "3ds": {
         "auth": {
             "success": {
-              "orderId": 0000000000,
+              "orderId": 1234,
               "status": "SUCCESS"
             },
             "error": {
-              "orderId": 000000000,
+              "orderId": 7890,
               "status": "DECLINED",
               "errorCode":"<REST ERROR CODE>",
               "errorKey":"<TMNT KEY>",
