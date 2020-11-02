@@ -29,19 +29,15 @@
     "profile": {
         "name": "typicode"
     },
-    "3ds": {
-        "auth": {
-            "success": {
-              "orderId": 1234,
-              "status": "SUCCESS"
-            },
-            "error": {
-              "orderId": 7890,
-              "status": "DECLINED",
-              "errorCode":"<REST ERROR CODE>",
-              "errorKey":"<TMNT KEY>",
-              "errorMessage":"<error message>"
-            }
-        }
+    "3dsAuthError": {
+      "orderId": 7890,
+      "status": "DECLINED",
+      "errorCode":"<REST ERROR CODE>",
+      "errorKey":"<TMNT KEY>",
+      "errorMessage":"<error message>"
+    },
+    "3dsAuthSuccess": {
+        "orderId": 1234,
+        "status": "SUCCESS"
     }
 }
