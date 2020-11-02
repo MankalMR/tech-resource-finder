@@ -28,5 +28,22 @@
     ],
     "profile": {
         "name": "typicode"
+    },
+    "3ds": {
+        "auth": {
+            {
+                "success": {
+                  "orderId": 0000000000,
+                  "status": "SUCCESS"
+                },
+                "error": {
+                  "orderId": 000000000,
+                  "status": "DECLINED",
+                  "errorCode":"<REST ERROR CODE>",
+                  "errorKey":"<TMNT KEY>",
+                  "errorMessage":"<error message>"
+                }
+            }
+        }
     }
 }
