@@ -40,5 +40,7 @@
         "orderId": 1234,
         "status": "SUCCESS"
     },
-    "redirectUrl": "https://api-integration.pxp-solutions.net/ThreeDSecureService/v5/3ds/redirect?id=8c78103e-a9d5-4013-a1f4-a2e57d11a7dc"
+    "redirectUrl": {
+        "url": "https://api-integration.pxp-solutions.net/ThreeDSecureService/v5/3ds/redirect?id=8c78103e-a9d5-4013-a1f4-a2e57d11a7dc"
+    }
 }
