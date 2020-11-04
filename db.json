@@ -41,6 +41,6 @@
         "status": "SUCCESS"
     },
     "redirectUrl": {
-        "url": "https://api-integration.pxp-solutions.net/ThreeDSecureService/v5/3ds/redirect?id=4b8efa17-58cb-4e2b-9134-51c64b4b87e0"
+        "url": "https://api-integration.pxp-solutions.net/ThreeDSecureService/v5/3ds/redirect?id=07508dda-2233-4ca5-80e5-fe17ff3a4dfb"
     }
 }
